@@ -1,0 +1,18 @@
+[build]
+  publish = "."
+  command = ""
+
+# Si en el futuro agregas un paso de build (por ejemplo Hugo), ponlo en `command`.
+# Ejemplo para Hugo:
+# command = "hugo --minify"
+# publish = "public"
+
+[context.production.environment]
+  # Variables de entorno para producción (si necesitas API keys)
+  # EJEMPLO_KEY = "valor"
+
+# Headers y redirects opcionales
+# [[redirects]]
+#   from = "/old-path"
+#   to = "/new-path"
+#   status = 301

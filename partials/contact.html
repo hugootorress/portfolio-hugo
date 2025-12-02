@@ -1,0 +1,83 @@
+<!-- Sección de contacto -->
+<section class="section contact-section" id="contact">
+  <div class="container">
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="section-header">
+          <span class="section-subtitle">Contáctame</span>
+          <h2 class="section-title">Trabajemos juntos</h2>
+          <div class="section-line"></div>
+        </div>
+        
+        <p class="contact-description">
+          ¿Tienes un proyecto interesante? Estoy disponible para oportunidades 
+          como desarrollador full-stack. ¡Hablemos!
+        </p>
+        
+        <div class="contact-details">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Email</h4>
+              <a href="mailto:hugales2005@gmail.com">hugales2005@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Ubicación</h4>
+              <p>Almería, España</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <div class="contact-text">
+              <h4>Disponibilidad</h4>
+              <p>Abierto a oportunidades</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-social">
+          <a href="https://github.com/hugootorress" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/hugo-torres-dev/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+      
+      <div class="contact-form">
+        <h3>Enviar mensaje</h3>
+        <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="contact">
+          <p style="display:none;">
+            <label>No rellenes esto: <input name="bot-field" /></label>
+          </p>
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" placeholder="Tu email" required>
+          </div>
+          <div class="form-group">
+            <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i>
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

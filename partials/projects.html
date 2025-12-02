@@ -1,0 +1,170 @@
+<!-- Sección de proyectos -->
+<section class="section projects-section" id="projects">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Mi trabajo</span>
+      <h2 class="section-title">Proyectos</h2>
+      <div class="section-line"></div>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Proyecto 1 - Taller App -->
+      <div class="project-card featured">
+        <div class="project-badge">
+          <span>⭐ Proyecto Destacado</span>
+        </div>
+        
+        <!-- Carrusel de imágenes -->
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_dashboard.png" alt="Dashboard principal de Taller App">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Dashboard Principal</h4>
+                    <p>Panel de control con estadísticas y acceso rápido a todas las funcionalidades</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_editarcliente.png" alt="Edición de clientes">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Edición de Clientes</h4>
+                    <p>Vista de la edición de un cliente y sus detalles</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_detalles_repa_factura.png" alt="Reparación y factura">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Detalles y factura de reparación</h4>
+                    <p>Detalles de una reparación y su factura en PDF sacada por la aplicación</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_piezas.png" alt="Gestión de piezas">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Gestión de piezas</h4>
+                    <p>Gestión de piezas con colores indicadores de stock</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_vehiculos.png" alt="Gestión de Vehículos">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Gestión de Vehículos</h4>
+                    <p>Gestión completa de vehículos asociados a clientes</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-indicators">
+              <button class="indicator active" data-slide="0"></button>
+              <button class="indicator" data-slide="1"></button>
+              <button class="indicator" data-slide="2"></button>
+              <button class="indicator" data-slide="3"></button>
+              <button class="indicator" data-slide="4"></button>
+            </div>
+            
+            <div class="carousel-counter">
+              <span class="current-slide">1</span>
+              <span class="separator">/</span>
+              <span class="total-slides">5</span>
+            </div>
+          </div>
+          
+          <div class="carousel-thumbnails">
+            <button class="thumbnail active" data-slide="0">
+              <img src="img/taller_dashboard.png" alt="Dashboard">
+              <span>Dashboard</span>
+            </button>
+            <button class="thumbnail" data-slide="1">
+              <img src="img/taller_detalles_repa_factura.png" alt="Clientes">
+              <span>Clientes</span>
+            </button>
+            <button class="thumbnail" data-slide="2">
+              <img src="img/taller_detalles_repa_factura.png" alt="ReparaciÓN">
+              <span>Reparaciones</span>
+            </button>
+            <button class="thumbnail" data-slide="3">
+              <img src="img/taller_piezas.png" alt="Piezas">
+              <span>Inventario</span>
+            </button>
+            <button class="thumbnail" data-slide="4">
+              <img src="img/taller_vehiculos.png" alt="Vehículos">
+              <span>Facturación</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="project-content">
+          <h3 class="project-title">Taller App</h3>
+          <p class="project-description">
+            Aplicación Full Stack para gestión integral de talleres mecánicos. 
+            Desarrollada con Laravel (backend API RESTful) y Angular (frontend SPA).
+            Incluye gestión completa de clientes, vehículos, reparaciones, inventario y facturación.
+          </p>
+          
+          <div class="project-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Autenticación con Laravel Sanctum</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Roles de usuario (admin/mecánico)</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Dockerizado para producción</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>API RESTful documentada</span>
+            </div>
+          </div>
+          
+          <div class="project-tech">
+            <span class="tech-tag">Laravel</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">TypeScript</span>
+            <span class="tech-tag">REST API</span>
+          </div>
+          
+          <div class="project-links">
+            <a href="https://github.com/hugootorress/taller-app" target="_blank" class="project-link">
+              <i class="fab fa-github"></i>
+              Código en GitHub
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
