@@ -58,7 +58,7 @@
       
       <div class="contact-form">
         <h3>Enviar mensaje</h3>
-        <form id="contactForm" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+        <form id="contactForm" name="contact" action="/.netlify/functions/submit-form" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
           <input type="hidden" name="form-name" value="contact">
           <p style="display:none;">
             <label>No rellenes esto: <input name="bot-field" /></label>

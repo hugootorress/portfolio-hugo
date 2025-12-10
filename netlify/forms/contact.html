@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Netlify form detection - contact</title>
+  </head>
+  <body>
+    <!-- Archivo usado únicamente para que Netlify detecte el formulario en build/dev -->
+    <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="contact">
+      <p style="display:none;">
+        <label>No rellenes esto: <input name="bot-field" /></label>
+      </p>
+      <p>
+        <label>Nombre <input type="text" name="name" /></label>
+      </p>
+      <p>
+        <label>Email <input type="email" name="email" /></label>
+      </p>
+      <p>
+        <label>Mensaje <textarea name="message"></textarea></label>
+      </p>
+      <p>
+        <button type="submit">Enviar (archivo de detección)</button>
+      </p>
+    </form>
+  </body>
+</html>

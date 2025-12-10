@@ -1,6 +1,7 @@
 [build]
   publish = "."
   command = ""
+  functions = "netlify/functions"
 
 # Si en el futuro agregas un paso de build (por ejemplo Hugo), ponlo en `command`.
 # Ejemplo para Hugo:
@@ -10,6 +11,14 @@
 [context.production.environment]
   # Variables de entorno para producción (si necesitas API keys)
   # EJEMPLO_KEY = "valor"
+
+# Configuración de Forms
+# Netlify detecta formularios en archivos HTML en el publish directory
+# y también en netlify/forms/
+[[forms]]
+  name = "contact"
+  # Netlify detectará automáticamente formularios con name="contact"
+  # y los enlistará en el dashboard de Forms
 
 # Headers y redirects opcionales
 # [[redirects]]
