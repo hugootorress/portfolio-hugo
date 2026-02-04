@@ -1,4 +1,3 @@
-// Notificaciones: función reutilizable y estilos
 export function initNotificationStyles() {
   if (document.getElementById('app-notification-styles')) return;
   const style = document.createElement('style');
@@ -18,9 +17,7 @@ export function showNotification(message, type = 'info') {
   notification.className = `notification ${type}`;
   notification.innerHTML = `\n    <i class="fas fa-${type === 'success' ? 'check-circle' : 'info-circle'}"></i>\n    <span>${message}</span>\n  `;
   document.body.appendChild(notification);
-  // entrada
   requestAnimationFrame(() => (notification.style.transform = 'translateX(0)'));
-  // salida
   setTimeout(() => {
     notification.style.transform = 'translateX(120%)';
     setTimeout(() => notification.remove(), 300);

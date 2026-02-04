@@ -1,4 +1,3 @@
-// Desplazamiento suave a anclas
 export function initSmoothScroll() {
   const navLinks = document.querySelectorAll('a[href^="#"]');
   navLinks.forEach(link => {

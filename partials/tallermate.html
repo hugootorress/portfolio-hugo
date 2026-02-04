@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TallerMate | Hugo Torres Portfolio</title>
+    <meta name="description" content="Aplicación Full Stack para gestión integral de talleres mecánicos">
+    <link rel="stylesheet" href="css/style-modular.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div data-partial="nav"></div>
+
+    <main class="project-detail-page">
+      <div class="container">
+        <div class="project-detail-header">
+          <h1 class="project-detail-title">TallerMate</h1>
+
+          <div class="project-links-detail">
+            <a href="https://github.com/hugootorress/taller-app" target="_blank" class="btn btn-primary">
+              <i class="fab fa-github"></i>
+              Ver en GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_dashboard.png" alt="Dashboard principal de TallerMate">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Dashboard Principal</h4>
+                    <p>Panel de control con estadísticas en tiempo real y acceso rápido a todas las funcionalidades de la aplicación.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_editarcliente.png" alt="Edición de clientes">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Gestión de Clientes</h4>
+                    <p>Sistema completo para administrar información de clientes, con validación de datos y búsqueda avanzada.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_detalles_repa_factura.png" alt="Reparación y factura">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Detalles de Reparación</h4>
+                    <p>Vista detallada de reparaciones con generación automática de facturas en PDF.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/taller_piezas.png" alt="Gestión de piezas">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Control de Inventario</h4>
+                    <p>Gestión inteligente de piezas con indicadores de stock mediante código de colores.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-indicators">
+              <button class="indicator active" data-slide="0"></button>
+              <button class="indicator" data-slide="1"></button>
+              <button class="indicator" data-slide="2"></button>
+              <button class="indicator" data-slide="3"></button>
+            </div>
+            
+            <div class="carousel-counter">
+              <span class="current-slide">1</span>
+              <span class="separator">/</span>
+              <span class="total-slides">4</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-detail-content">
+          <section class="detail-section">
+            <h2>Descripción del Proyecto</h2>
+            <p>
+              TallerMate es una aplicación web Full Stack diseñada para la gestión integral de talleres mecánicos. 
+              La aplicación permite administrar de manera eficiente clientes, vehículos, reparaciones, inventario y facturación, 
+              todo desde una interfaz moderna e intuitiva.
+            </p>
+          </section>
+
+          <section class="detail-section">
+            <h2>Características Principales</h2>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-lock"></i>
+                <h3>Autenticación Segura</h3>
+                <p>Sistema de autenticación con Laravel Sanctum y gestión de tokens JWT</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-users"></i>
+                <h3>Gestión de Roles</h3>
+                <p>Roles de usuario diferenciados (Administrador y Mecánico) con permisos específicos</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-file-invoice"></i>
+                <h3>Generación de Facturas</h3>
+                <p>Creación automática de facturas en formato PDF con todos los detalles de la reparación</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-chart-line"></i>
+                <h3>Dashboard Estadístico</h3>
+                <p>Panel de control con métricas en tiempo real sobre el estado del taller</p>
+              </div>
+              <div class="feature-item">
+                <i class="fab fa-docker"></i>
+                <h3>Dockerizado</h3>
+                <p>Aplicación completamente dockerizada para fácil despliegue en cualquier entorno</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Responsive Design</h3>
+                <p>Diseño adaptable que funciona perfectamente en escritorio, tablet y móvil</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <h2>Tecnologías Utilizadas</h2>
+            <div class="tech-details">
+              <div class="tech-category">
+                <h3>Backend</h3>
+                <ul>
+                  <li><strong>Laravel 10:</strong> Framework PHP para la API RESTful</li>
+                  <li><strong>Laravel Sanctum:</strong> Autenticación de API con tokens</li>
+                  <li><strong>MySQL:</strong> Base de datos relacional</li>
+                  <li><strong>Docker:</strong> Contenedorización de la aplicación</li>
+                </ul>
+              </div>
+              <div class="tech-category">
+                <h3>Frontend</h3>
+                <ul>
+                  <li><strong>Angular 16:</strong> Framework para SPA</li>
+                  <li><strong>TypeScript:</strong> Lenguaje de programación tipado</li>
+                  <li><strong>RxJS:</strong> Programación reactiva</li>
+                  <li><strong>Angular Material:</strong> Componentes UI</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <h2>Despliegue</h2>
+            <div class="deployment-info">
+              <div class="deployment-item">
+                <i class="fab fa-aws"></i>
+                <h3>AWS</h3>
+                <p>La aplicación fue desplegada en Amazon Web Services utilizando EC2 para hosting, S3 para almacenamiento de archivos, y RDS para la base de datos relacional.</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer"></div>
+
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

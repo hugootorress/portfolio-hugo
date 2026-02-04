@@ -9,20 +9,17 @@ import { initProjectCarousels } from './projectCarousel.js';
 import { initHoverEffects } from './hoverEffects.js';
 import { initNotificationStyles } from './notifications.js';
 import { loadPartials } from './htmlLoader.js';
+import { initTypingEffect } from './typing.js';
 
-// Punto único de entrada: inicializa todo cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', async function () {
   console.log('Portfolio Hugo Torres - Cargado (modular)');
 
-  // Cargar partials HTML (si hay placeholders)
   await loadPartials();
 
-  // Inicializar estilos de notificaciones si está disponible
   if (typeof initNotificationStyles === 'function') {
     initNotificationStyles();
   }
 
-  // Inicializar módulos una vez el DOM (y partials) están listos
   initMobileMenu();
   initSmoothScroll();
   initBackToTop();
@@ -32,9 +29,9 @@ document.addEventListener('DOMContentLoaded', async function () {
   initSkillBars();
   initProjectCarousels();
   initHoverEffects();
+  initTypingEffect();
 });
 
-// Efecto visual en la navegación cuando el usuario hace scroll
 window.addEventListener('scroll', () => {
   const nav = document.querySelector('.main-nav');
   const scrollY = window.scrollY;
@@ -52,7 +49,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-// Preloader simple (opcional)
 window.addEventListener('load', () => {
   setTimeout(() => {
     document.body.style.opacity = '1';

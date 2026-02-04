@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Piscinas | Hugo Torres Portfolio</title>
+    <meta name="description" content="Landing Page para empresa de mantenimiento de piscinas">
+    <link rel="stylesheet" href="css/style-modular.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" />
+  </head>
+  <body>
+    <div data-partial="nav"></div>
+
+    <main class="project-detail-page">
+      <div class="container">
+        <div class="project-detail-header">
+          <h1 class="project-detail-title">Landing Page Piscinas</h1>
+
+          <div class="project-links-detail">
+            <a href="#" target="_blank" class="btn btn-primary">
+              <i class="fas fa-globe"></i>
+              Ver Demo
+            </a>
+            <a href="#" target="_blank" class="btn btn-secondary">
+              <i class="fab fa-github"></i>
+              Ver Código
+            </a>
+          </div>
+        </div>
+
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/portfolio.png" alt="Página principal">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Hero Section</h4>
+                    <p>Página de inicio con llamada a la acción clara y diseño atractivo que captura la atención del visitante.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/portfolio.png" alt="Servicios">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Sección de Servicios</h4>
+                    <p>Presentación detallada de todos los servicios de mantenimiento y limpieza de piscinas ofrecidos.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/portfolio.png" alt="Contacto">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Formulario de Contacto</h4>
+                    <p>Formulario interactivo para que los clientes potenciales soliciten presupuestos o información.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-indicators">
+              <button class="indicator active" data-slide="0"></button>
+              <button class="indicator" data-slide="1"></button>
+              <button class="indicator" data-slide="2"></button>
+            </div>
+            
+            <div class="carousel-counter">
+              <span class="current-slide">1</span>
+              <span class="separator">/</span>
+              <span class="total-slides">3</span>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="project-detail-content">
+          <section class="detail-section">
+            <h2>Descripción del Proyecto</h2>
+            <p>
+              Landing Page profesional diseñada para una empresa de mantenimiento de piscinas. 
+              El sitio está optimizado para la conversión, con un diseño moderno, limpio y responsive 
+              que se adapta perfectamente a cualquier dispositivo.
+            </p>
+            <p>
+              La página destaca los servicios principales de la empresa y facilita el contacto con 
+              potenciales clientes a través de un formulario intuitivo y llamadas a la acción estratégicamente ubicadas.
+            </p>
+          </section>
+
+          <section class="detail-section">
+            <h2>Características Principales</h2>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Diseño Responsive</h3>
+                <p>Adaptable a todos los dispositivos: móvil, tablet y escritorio</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <h3>Optimización de Rendimiento</h3>
+                <p>Carga rápida con imágenes optimizadas y código minificado</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-envelope"></i>
+                <h3>Formulario de Contacto</h3>
+                <p>Sistema de contacto funcional con validación de datos</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-paint-brush"></i>
+                <h3>Diseño Moderno</h3>
+                <p>Interfaz limpia y atractiva con animaciones suaves</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-search"></i>
+                <h3>SEO Optimizado</h3>
+                <p>Estructura semántica y meta tags para mejor posicionamiento</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-rocket"></i>
+                <h3>Llamadas a la Acción</h3>
+                <p>Botones estratégicos para maximizar las conversiones</p>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer"></div>
+
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

@@ -8,16 +8,4 @@ export function initHoverEffects() {
       card.style.transform = 'translateY(0) scale(1)';
     });
   });
-
-  const techs = document.querySelectorAll('.tech-item');
-  techs.forEach((item) => {
-    const logo = item.querySelector('.tech-logo');
-    if (!logo) return;
-    item.addEventListener('mouseenter', () => {
-      logo.style.transform = 'rotate(15deg) scale(1.1)';
-    });
-    item.addEventListener('mouseleave', () => {
-      logo.style.transform = 'rotate(0) scale(1)';
-    });
-  });
 }

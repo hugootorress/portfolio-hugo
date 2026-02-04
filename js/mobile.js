@@ -1,4 +1,3 @@
-// Menú móvil
 export function initMobileMenu() {
   const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
   const closeMenuBtn = document.querySelector('.close-menu-btn');

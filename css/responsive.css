@@ -1,12 +1,15 @@
-/* Responsive Design */
 @media (max-width: 992px) {
   .hero-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 40px;
+    max-width: 700px;
   }
   
-  .hero-actions { justify-content: center; }
+  .hero-greeting {
+    font-size: 3.5rem;
+  }
+  
+  .hero-tagline {
+    font-size: 1.8rem;
+  }
   
   .about-content { grid-template-columns: 1fr; }
   
@@ -24,19 +27,17 @@
   
   .mobile-menu-btn { display: block; }
   
-  .hero-title { font-size: 3rem; }
+  .hero-greeting { font-size: 3rem; }
   
-  .hero-subtitle { font-size: 1.5rem; }
+  .hero-tagline { font-size: 1.5rem; }
   
-  .avatar-container { width: 300px; height: 300px; }
+  .skills-grid { gap: 15px; }
   
-  .avatar-circle { width: 250px; height: 250px; }
+  .skill-box { width: 100px; height: 100px; }
   
-  .avatar-emoji { font-size: 4rem; }
+  .skill-box i { font-size: 2rem; }
   
-  .tech-icon { transform: rotate(calc(var(--i) * 90deg)) translate(120px) rotate(calc(var(--i) * -90deg)); }
-  
-  .skills-container { grid-template-columns: 1fr; }
+  .skill-box span { font-size: 0.7rem; }
   
   .projects-grid { grid-template-columns: 1fr; }
   
@@ -52,29 +53,25 @@
 }
 
 @media (max-width: 576px) {
-  .hero-title { font-size: 2.5rem; }
+  .hero-greeting { font-size: 2.5rem; }
   
-  .hero-subtitle { font-size: 1.3rem; }
+  .hero-tagline { 
+    font-size: 1.3rem; 
+    margin-bottom: 40px;
+  }
   
-  .hero-actions { flex-direction: column; gap: 15px; }
+  .hero-cta {
+    padding: 14px 28px;
+    font-size: 1rem;
+  }
   
   .btn { width: 100%; justify-content: center; }
 
-  
-  .avatar-container { width: 250px; height: 250px; }
-  
-  .avatar-circle { width: 200px; height: 200px; }
-  
-  .avatar-emoji { font-size: 3rem; }
-  
-  .tech-icon { width: 40px; height: 40px; font-size: 1.2rem; transform: rotate(calc(var(--i) * 90deg)) translate(100px) rotate(calc(var(--i) * -90deg)); }
-  
   .about-details { grid-template-columns: 1fr; }
   
   .tech-stack { grid-template-columns: 1fr; }
 }
 
-/* Responsive para carrusel */
 @media (max-width: 992px) {
   .slide-content { grid-template-columns: 1fr; gap: 30px; padding: 30px; }
   
@@ -115,4 +112,30 @@
   .carousel-counter { bottom: 10px; right: 10px; font-size: 0.8rem; padding: 6px 12px; }
   
   .carousel-indicators { bottom: 10px; }
+  
+  .project-detail-title { font-size: 2rem; }
+  
+  .project-detail-subtitle { font-size: 1.1rem; }
+  
+  .project-tech-stack { gap: 8px; }
+  
+  .project-links-detail { flex-direction: column; }
+  
+  .project-links-detail .btn { width: 100%; justify-content: center; }
+  
+  .features-grid { grid-template-columns: 1fr; }
+  
+  .tech-details { grid-template-columns: 1fr; }
+  
+  .footer-content { 
+    flex-direction: column; 
+    gap: 20px; 
+    text-align: center; 
+  }
+  
+  .skill-box { width: 90px; height: 90px; }
+  
+  .skill-box i { font-size: 1.8rem; }
+  
+  .skill-box span { font-size: 0.65rem; }
 }

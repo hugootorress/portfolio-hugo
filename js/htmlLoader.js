@@ -1,11 +1,9 @@
 export async function loadPartials(partials = []) {
-  // Si no se pasan partials, buscar all placeholders data-partial
   if (!partials || partials.length === 0) {
     const nodes = document.querySelectorAll('[data-partial]');
     nodes.forEach(n => partials.push(n.getAttribute('data-partial')));
   }
 
-  // Cargar cada partial desde /partials/<name>.html
   const promises = partials.map(async (name) => {
     try {
       const res = await fetch(`partials/${name}.html`);
