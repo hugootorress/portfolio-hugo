@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /partials/
+Disallow: /img/
+Disallow: /css/
+Disallow: /js/
+Disallow: /netlify/

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <base href="../../" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StayFocusAI | Hugo Torres Portfolio</title>
+    <meta name="description" content="Sistema de monitoreo de productividad mediante visión artificial y YOLOv8">
+    <link rel="stylesheet" href="css/style-modular.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="img/general/favicon.ico" />
+  </head>
+  <body>
+    <div data-partial="nav"></div>
+
+    <main class="project-detail-page">
+      <div class="container">
+        <div class="project-detail-header">
+          <h1 class="project-detail-title">StayFocusAI</h1>
+
+          <div class="project-links-detail">
+            <a href="https://github.com/hugootorress/stayfocusai" target="_blank" class="btn btn-primary">
+              <i class="fab fa-github"></i>
+              Ver en GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/stayfocusai/reporte_productividad.png" alt="Dashboard de analítica de StayFocusAI">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Dashboard de Analítica</h4>
+                    <p>Visualización dual generada con Pandas y Seaborn que muestra la frecuencia y el tiempo total de distracciones por hora.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/stayfocusai/evidencia_ia.png" alt="Detección de móvil con YOLOv8">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Detección en Tiempo Real</h4>
+                    <p>Inferencia de red neuronal identificando distracciones físicas con precisión, capturando evidencias para auditoría de enfoque.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-slide">
+                <div class="slide-content">
+                  <div class="slide-image">
+                    <img src="img/stayfocusai/system_tray.png" alt="StayFocusAI en la barra de tareas">
+                  </div>
+                  <div class="slide-info">
+                    <h4>Operación No Intrusiva</h4>
+                    <p>Integración con la bandeja del sistema (System Tray) para un monitoreo silencioso sin interrumpir el flujo de trabajo.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <button class="carousel-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-indicators">
+              <button class="indicator active" data-slide="0"></button>
+              <button class="indicator" data-slide="1"></button>
+              <button class="indicator" data-slide="2"></button>
+            </div>
+            
+            <div class="carousel-counter">
+              <span class="current-slide">1</span>
+              <span class="separator">/</span>
+              <span class="total-slides">3</span>
+            </div>
+          </div>        </div>
+          <div class="project-detail-content">
+          <section class="detail-section">
+            <h2>Descripción del Proyecto</h2>
+            <p>
+              StayFocusAI es una herramienta de productividad avanzada que utiliza <strong>Visión Artificial</strong> para ayudar a desarrolladores a mantener el enfoque. 
+              A diferencia de las apps tradicionales, StayFocusAI corre en segundo plano y utiliza una red neuronal para detectar distracciones físicas (uso del móvil), 
+              emitiendo alertas audibles y registrando datos para su posterior análisis estadístico.
+            </p>
+          </section>
+
+          <section class="detail-section">
+            <h2>Características Principales</h2>
+            <div class="features-grid">
+              <div class="feature-item">
+                <i class="fas fa-brain"></i>
+                <h3>Inferencia de IA</h3>
+                <p>Uso de YOLOv8 (You Only Look Once) para la detección de objetos con alta precisión y baja latencia.</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-eye-slash"></i>
+                <h3>Modo Invisible</h3>
+                <p>Integración con la bandeja del sistema (System Tray) mediante PyStray para operar sin ventanas abiertas.</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-chart-pie"></i>
+                <h3>MLOps & Data Log</h3>
+                <p>Sistema de guardado de evidencias visuales y logs en CSV para el re-entrenamiento y auditoría de enfoque.</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-volume-up"></i>
+                <h3>Alertas Asíncronas</h3>
+                <p>Notificaciones de voz multihilo (gTTS/pyttsx3) y notificaciones nativas de Windows para corrección inmediata.</p>
+              </div>
+              <div class="feature-item">
+                <i class="fas fa-cogs"></i>
+                <h3>Configuración YAML</h3>
+                <p>Arquitectura desacoplada que permite ajustar umbrales y tiempos mediante archivos de configuración externos.</p>
+              </div>
+              <div class="feature-item">
+                <i class="fab fa-docker"></i>
+                <h3>Contenerizado</h3>
+                <p>Dockerizado para garantizar la portabilidad de las dependencias de Computer Vision.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="detail-section">
+            <h2>Tecnologías Utilizadas</h2>
+            <div class="tech-details">
+              <div class="tech-category">
+                <h3>Core & AI</h3>
+                <ul>
+                  <li><strong>Python 3.11:</strong> Lenguaje base del sistema</li>
+                  <li><strong>YOLOv8 (Ultralytics):</strong> Modelo de Deep Learning</li>
+                  <li><strong>OpenCV:</strong> Procesamiento de frames de video</li>
+                  <li><strong>PyTorch:</strong> Framework de computación tensorial</li>
+                </ul>
+              </div>
+              <div class="tech-category">
+                <h3>Data & System</h3>
+                <ul>
+                  <li><strong>Pandas & Seaborn:</strong> Análisis y visualización de datos</li>
+                  <li><strong>PyYAML:</strong> Gestión de configuración jerárquica</li>
+                  <li><strong>PyStray & Plyer:</strong> Integración con el SO y notificaciones</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <div data-partial="footer"></div>
+
+    <button class="back-to-top" id="backToTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

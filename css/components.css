@@ -337,6 +337,7 @@
 .tech-logo.angular { background: linear-gradient(135deg, #DD0031, #C3002F); }
 .tech-logo.wordpress { background: linear-gradient(135deg, #21759B, #0F95C4); }
 .tech-logo.react { background: linear-gradient(135deg, #61DAFB, #00D8FF); }
+.tech-logo.python { background: linear-gradient(135deg, #3776AB, #FFD43B); }
 .tech-name { font-weight: 600; color: var(--light); }
 
 .skills-grid {
@@ -399,6 +400,12 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
   text-align: center;
+}
+
+.skill-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
 }
 
 .timeline { position: relative; max-width: 800px; margin: 0 auto; }
